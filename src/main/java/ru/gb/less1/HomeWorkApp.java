@@ -5,7 +5,7 @@ public class HomeWorkApp {
 
        System.out.println("Задание 2");
        System.out.println(" ");
-       printThreeWords("Orange","Banana","Apple" );
+       printThreeWords();
        System.out.println(" ");
        System.out.println("Задание 3");
        System.out.println(" ");
@@ -24,25 +24,21 @@ public class HomeWorkApp {
 
     //Задание 1 - вызов для вывода в столбец три слова
 
-    public static String printThreeWords(String val1, String val2, String val3){
-        System.out.println(val1);
-        System.out.println(val2);
-        System.out.println(val3);
-        String s = val1 + val2 + val3;
-        return s;
+    public static void printThreeWords(){
+        System.out.println("Orange");
+        System.out.println("Banana");
+        System.out.println("Apple");
     }
 
     // Задание 2 - Сумма положительная и отрицательная
 
-    public static int checkSumSign(int a, int b){
-        int c = a + b;
-        if (c >= 0) {
+    public static void checkSumSign(int a, int b){
+        if (a + b >= 0) {
                 System.out.println("Сумма положительная");
             }
          else {
             System.out.println("Сумма отрицательная");
         }
-        return c;
     }
 
 
@@ -69,6 +65,6 @@ public class HomeWorkApp {
         return a + b;
 
     }
-    
+
 
 }
